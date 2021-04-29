@@ -20,7 +20,7 @@ parts/
 sdist/
 var/
 wheels/
-*.sqlite
+
 share/python-wheels/
 *.egg-info/
 .installed.cfg

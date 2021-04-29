@@ -44,11 +44,12 @@ def getJsoncasesactive(start_datepar,enddate_datepar):
             if not results_df.empty:
                 results_df.to_csv(path_or_buf=filepath, mode="w", index=False)
                 count += 1
-                #sendRecordsTodb(results_df, "db.sqlite", "casos")
+                sendRecordsTodb(results_df, "db.sqlite", "casos")
         else:
             if not results_df.empty:
                 results_df.to_csv(path_or_buf=filepath, mode="w", index=False, header=None)
                 count += 1
+                sendRecordsTodb(results_df, "db.sqlite", "casos")
 
 
 
